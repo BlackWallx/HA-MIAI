@@ -104,7 +104,7 @@ awk '{gsub("^res_keywords=.*", "res_keywords=\"'${res_keywords}'\""); print $0}'
 awk '{gsub("^keywords_update_timeout=.*", "keywords_update_timeout='${keywords_update_timeout}'"); print $0}' |
 awk '{gsub("^nodered_url=.*", "nodered_url=\"'${nodered_url}'\""); print $0}' |
 awk '{gsub("^asr_file=.*", "asr_file=\"'${mico_tmppath}'/mibrain/mibrain_asr.log\""); print $0}' |
-awk '{gsub("^res_file=.*", "res_file=\"'${mico_tmppath}'/mibrain/mibrain_response.log\""); print $0}' |
+awk '{gsub("^res_file=.*", "res_file=\"'${mico_tmppath}'/mibrain/mibrain_txt_RESULT_NLP.log\""); print $0}' |
 awk '{gsub("^nodered_auth=.*", "nodered_auth=\"'${nodered_auth}'\""); print $0}' > $mico_path
 chmod a+x $mico_path
 
